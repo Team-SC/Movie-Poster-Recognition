@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/DueMBA/Desktop/github/android_ocr/OCR-chiou/libraries/tess-two/src/main/assets"/></dataSet><dataSet config="release"><source path="/Users/DueMBA/Desktop/github/android_ocr/OCR-chiou/libraries/tess-two/src/release/assets"/></dataSet></merger>
