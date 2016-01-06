@@ -2,7 +2,7 @@
 This is the project of lecture Software Creation Project in 2015 fall at NCTU. 
 
 ## Introduction
-This adnroid application aims at recognize movie's title from common movie posters and retrieve related information including actors, director, introduction and rates. All of these movie information are obtained by parsing IMDB website.
+This android application aims at recognize movie's title from common movie posters and retrieve related information including actors, director, introduction and rates. All of these movie information are obtained by parsing IMDB website.
 
 ## Demo
 Demo 1: *PAN*
