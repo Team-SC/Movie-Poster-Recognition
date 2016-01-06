@@ -125,7 +125,8 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback, Vi
 
         Log.d(TAG, "Initialization of TessBaseApi");
 
-        new TessAsyncEngine().executeOnExecutor(AsyncTask.SERIAL_EXECUTOR, this, bmp);
+        new TessAsyncEngine(MainActivity.this).executeOnExecutor(AsyncTask.SERIAL_EXECUTOR, this, bmp);
+
 
     }
 

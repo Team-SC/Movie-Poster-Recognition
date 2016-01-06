@@ -1,2 +1,2 @@
-/Users/DueMBA/Desktop/github/tess-two/tess-two/bin/AndroidManifest.xml : \
-/Users/DueMBA/Desktop/github/tess-two/tess-two/AndroidManifest.xml \
+C:\tess\tess-two\bin\AndroidManifest.xml : \
+C:\tess\tess-two\AndroidManifest.xml \

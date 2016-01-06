@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">TessOcr</string>
+    <string name="app_name">OcrDemo</string>
     <string name="action_settings">Settings</string>
     <string name="image_dialog_description">Image Preview</string>
+    <string name="title_activity_movie_search">MovieSearch</string>
+    <string name="ok_label">OK</string>
+
+    <string name="hello_world">Hello world!</string>
 
 </resources>

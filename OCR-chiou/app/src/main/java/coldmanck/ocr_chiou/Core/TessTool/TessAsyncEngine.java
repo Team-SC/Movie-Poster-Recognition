@@ -1,12 +1,17 @@
 package coldmanck.ocr_chiou.Core.TessTool;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.AsyncTask;
 import android.util.Log;
 
 import coldmanck.ocr_chiou.Core.Dialogs.ImageDialog;
 import coldmanck.ocr_chiou.Core.Imaging.Tools;
+import coldmanck.ocr_chiou.MainActivity;
+import coldmanck.ocr_chiou.MovieSearch;
+
 
 /**
  * Created by Fadi on 6/11/2014.
@@ -18,6 +23,9 @@ public class TessAsyncEngine extends AsyncTask<Object, Void, String> {
     private Bitmap bmp;
 
     private Activity context;
+
+    private Context ctx;
+    public TessAsyncEngine(Context c){this.ctx = c;}
 
 
     @Override
@@ -78,12 +86,18 @@ public class TessAsyncEngine extends AsyncTask<Object, Void, String> {
 
         if(s == null || bmp == null || context == null)
             return;
-
+        /*
         ImageDialog.New()
                 .addBitmap(bmp)
                 .addTitle(s)
                 .show(context.getFragmentManager(), TAG);
+        */
 
-        super.onPostExecute(s);
+        Intent intent = new Intent( ctx, MovieSearch.class);
+        intent.putExtra("movie_term", s);
+        context.startActivity(intent);
+        //super.onPostExecute(s);
+
+
     }
 }

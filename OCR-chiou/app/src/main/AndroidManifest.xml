@@ -1,82 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-package="coldmanck.ocr_chiou" >
+    package="coldmanck.ocr_chiou" >
 
-<supports-screens
-    android:xlargeScreens="true"
-    android:largeScreens="true"
-    android:normalScreens="true"
-    android:smallScreens="true" />
 
-<uses-permission android:name="android.permission.CAMERA"/>
-<uses-feature android:name="android.hardware.camera.autofocus" />
-<uses-feature
-    android:name="android.hardware.camera.flash"
-    android:required="false" />
-<uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
 
-<application
-    android:allowBackup="true"
-    android:icon="@drawable/ic_launcher"
-    android:label="@string/app_name"
-    android:theme="@style/AppTheme" >
-    <activity
-        android:name="coldmanck.ocr_chiou.MainActivity"
-        android:screenOrientation="portrait"
-        android:configChanges="orientation|keyboardHidden|screenSize"
-        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
-        android:windowSoftInputMode="stateAlwaysHidden"
-        android:label="@string/app_name" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
-</application>
-</manifest>
 
-    <!--<?xml version="1.0" encoding="utf-8"?>-->
-<!--<manifest xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--package="coldmanck.ocr_chiou">-->
 
-<!--<application-->
-    <!--android:allowBackup="true"-->
-    <!--android:icon="@mipmap/ic_launcher"-->
-    <!--android:label="@string/app_name"-->
-    <!--android:supportsRtl="true"-->
-    <!--android:theme="@style/AppTheme">-->
-    <!--<activity android:name=".MainActivity">-->
-        <!--<intent-filter>-->
-            <!--<action android:name="android.intent.action.MAIN" />-->
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
 
-            <!--<category android:name="android.intent.category.LAUNCHER" />-->
-        <!--</intent-filter>-->
-    <!--</activity>-->
-<!--</application>-->
+    <uses-permission android:name="android.permission.CAMERA" />
 
-<!--&lt;!&ndash; FOR PROJECT 1 &ndash;&gt;-->
-<!--&lt;!&ndash;<uses-permission android:name="android.permission.CAMERA" />&ndash;&gt;-->
-<!--&lt;!&ndash;<uses-permission android:name="android.permission.FLASHLIGHT" />&ndash;&gt;-->
-<!--&lt;!&ndash;<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />&ndash;&gt;-->
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.camera" />
 
-<!--&lt;!&ndash;<uses-feature&ndash;&gt;-->
-<!--&lt;!&ndash;android:name="android.hardware.camera"&ndash;&gt;-->
-<!--&lt;!&ndash;android:required="false" />&ndash;&gt;-->
-<!--&lt;!&ndash;<uses-feature&ndash;&gt;-->
-<!--&lt;!&ndash;android:name="android.hardware.camera.autofocus"&ndash;&gt;-->
-<!--&lt;!&ndash;android:required="false" />&ndash;&gt;-->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-<!--&lt;!&ndash;<supports-screens&ndash;&gt;-->
-<!--&lt;!&ndash;android:xlargeScreens="true"&ndash;&gt;-->
-<!--&lt;!&ndash;android:largeScreens="true"&ndash;&gt;-->
-<!--&lt;!&ndash;android:normalScreens="true"&ndash;&gt;-->
-<!--&lt;!&ndash;android:smallScreens="true" />&ndash;&gt;-->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MovieSearch"
+            android:label="@string/title_activity_movie_search" >
+        </activity>
+    </application>
 
-<!--<uses-permission android:name="android.permission.CAMERA"/>-->
-<!--<uses-feature android:name="android.hardware.camera.autofocus" />-->
-<!--<uses-feature-->
-    <!--android:name="android.hardware.camera.flash"-->
-    <!--android:required="false" />-->
-<!--<uses-feature android:name="android.hardware.camera" />-->
-
-<!--</manifest>-->
+</manifest> <!-- <?xml version="1.0" encoding="utf-8"?> -->
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!-- package="coldmanck.ocr_chiou"> -->
+<!-- <application -->
+<!-- android:allowBackup="true" -->
+<!-- android:icon="@mipmap/ic_launcher" -->
+<!-- android:label="@string/app_name" -->
+<!-- android:supportsRtl="true" -->
+<!-- android:theme="@style/AppTheme"> -->
+<!-- <activity android:name=".MainActivity"> -->
+<!-- <intent-filter> -->
+<!-- <action android:name="android.intent.action.MAIN" /> -->
+<!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+<!-- </intent-filter> -->
+<!-- </activity> -->
+<!-- </application> -->
+<!-- &lt;!&ndash; FOR PROJECT 1 &ndash;&gt; -->
+<!-- &lt;!&ndash;<uses-permission android:name="android.permission.CAMERA" />&ndash;&gt; -->
+<!-- &lt;!&ndash;<uses-permission android:name="android.permission.FLASHLIGHT" />&ndash;&gt; -->
+<!-- &lt;!&ndash;<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />&ndash;&gt; -->
+<!-- &lt;!&ndash;<uses-feature&ndash;&gt; -->
+<!-- &lt;!&ndash;android:name="android.hardware.camera"&ndash;&gt; -->
+<!-- &lt;!&ndash;android:required="false" />&ndash;&gt; -->
+<!-- &lt;!&ndash;<uses-feature&ndash;&gt; -->
+<!-- &lt;!&ndash;android:name="android.hardware.camera.autofocus"&ndash;&gt; -->
+<!-- &lt;!&ndash;android:required="false" />&ndash;&gt; -->
+<!-- &lt;!&ndash;<supports-screens&ndash;&gt; -->
+<!-- &lt;!&ndash;android:xlargeScreens="true"&ndash;&gt; -->
+<!-- &lt;!&ndash;android:largeScreens="true"&ndash;&gt; -->
+<!-- &lt;!&ndash;android:normalScreens="true"&ndash;&gt; -->
+<!-- &lt;!&ndash;android:smallScreens="true" />&ndash;&gt; -->
+<!-- <uses-permission android:name="android.permission.CAMERA"/> -->
+<!-- <uses-feature android:name="android.hardware.camera.autofocus" /> -->
+<!-- <uses-feature -->
+<!-- android:name="android.hardware.camera.flash" -->
+<!-- android:required="false" /> -->
+<!-- <uses-feature android:name="android.hardware.camera" /> -->
+<!-- </manifest> -->
