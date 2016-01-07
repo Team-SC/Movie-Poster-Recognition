@@ -19,4 +19,4 @@ Demo 2: *AVATAR*
 6. [Android Character Recognition](http://www.codeproject.com/Articles/840623/Android-Character-Recognition)
 
 ## License
-It is released under GNU GPL license. See the LICENSE file to see license rights and limitation.
+It is released under MIT license. See the LICENSE file to see license rights and limitation.
